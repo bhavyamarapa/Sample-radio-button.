@@ -9,6 +9,7 @@ script:
   - docker run bhavyamarapa/radio-button-app npm run test -- --coverage
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "radio-button-app"
@@ -20,3 +21,4 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
+ 
