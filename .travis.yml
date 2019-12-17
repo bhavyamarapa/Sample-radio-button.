@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t bhavyamarapa/radio-button-app  -f Dockerfile.dev .
+
+script:
+  - docker run bhavyamarapa/radio-button-app npm run test --coverage
