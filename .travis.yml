@@ -13,7 +13,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "radio-button-app"
-  env: " RadioButtonApp-env"
+  env: "RadioButtonApp-env"
   bucket_name: "elasticbeanstalk-us-east-2-272412786920"
   bucket_path: "radio-button-app"
   on:
